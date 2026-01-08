@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Syed Shoaib Aslam | Portfolio">
+    <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        -->
+    <!--
+        Notice the use of  in the tags above.
+        It will be replaced with the URL of the `public` folder during the build.
+        Only files inside the `public` folder can be referenced from the HTML.
+
+        Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+        work correctly both with client-side routing and a non-root public URL.
+        Learn how to configure a non-root public URL by running `npm run build`.
+        -->
+    <title>Syed Shoaib Aslam | Personal Portfolio</title>
+    <script src="js/emergent-main.js"></script>
+    <!--
+        These two scripts have been added for the Visual Edits, please do not edit or remove them
+        -->
+    <script>
+        // Only load visual edit scripts when inside an iframe
+        if (window.self !== window.top) {
+            // Load debug monitor script
+            var debugMonitorScript = document.createElement('script');
+            debugMonitorScript.src = 'https://assets.emergent.sh/scripts/debug-monitor.js';
+            document.head.appendChild(debugMonitorScript);
+
+            // Configure Tailwind
+            window.tailwind = window.tailwind || {};
+            tailwind.config = {
+                corePlugins: { preflight: false },
+            };
+
+            // Load Tailwind CDN
+            var tailwindScript = document.createElement('script');
+            tailwindScript.src = 'https://cdn.tailwindcss.com';
+            document.head.appendChild(tailwindScript);
+        }
+    </script>
+    <script defer="" src="js/bundle.js"></script>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script>
+        !(function (t, e) {
+            var o, n, p, r;
+            e.__SV ||
+                ((window.posthog = e),
+                    (e._i = []),
+                    (e.init = function (i, s, a) {
+                        function g(t, e) {
+                            var o = e.split(".");
+                            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                                (t[e] = function () {
+                                    t.push(
+                                        [e].concat(
+                                            Array.prototype.slice.call(
+                                                arguments,
+                                                0,
+                                            ),
+                                        ),
+                                    );
+                                });
+                        }
+                        ((p = t.createElement("script")).type =
+                            "text/javascript"),
+                            (p.crossOrigin = "anonymous"),
+                            (p.async = !0),
+                            (p.src =
+                                s.api_host.replace(
+                                    ".i.posthog.com",
+                                    "-assets.i.posthog.com",
+                                ) + "/static/array.js"),
+                            (r =
+                                t.getElementsByTagName(
+                                    "script",
+                                )[0]).parentNode.insertBefore(p, r);
+                        var u = e;
+                        for (
+                            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                            u.people = u.people || [],
+                            u.toString = function (t) {
+                                var e = "posthog";
+                                return (
+                                    "posthog" !== a && (e += "." + a),
+                                    t || (e += " (stub)"),
+                                    e
+                                );
+                            },
+                            u.people.toString = function () {
+                                return u.toString(1) + ".people (stub)";
+                            },
+                            o =
+                            "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
+                                " ",
+                            ),
+                            n = 0;
+                            n < o.length;
+                            n++
+                        )
+                            g(u, o[n]);
+                        e._i.push([i, s, a]);
+                    }),
+                    (e.__SV = 1));
+        })(document, window.posthog || []);
+        posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
+            api_host: "https://us.i.posthog.com",
+            person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+        });
+    </script>
+
+
+    <style>
+        /* Aesthetic Enhancements */
+        :root {
+            --primary-glow: conic-gradient(from 180deg at 50% 50%,
+                    #16abff33 0deg,
+                    #0885ff33 55deg,
+                    #54d6ff33 120deg,
+                    #0071ff33 160deg,
+                    transparent 360deg);
+        }
+
+        body {
+            background-color: #030303 !important;
+            color: #ffffff !important;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Profile Image Animation */
+        img[alt="Syed Shoaib Aslam"] {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease !important;
+        }
+
+        img[alt="Syed Shoaib Aslam"]:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+        }
+
+        /* Button Glow Effects */
+        button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease !important;
+        }
+
+        button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4) !important;
+        }
+
+        /* Background Blobs */
+        .bg-blob {
+            position: fixed;
+            width: 700px;
+            height: 700px;
+            background: var(--primary-glow);
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.3;
+            pointer-events: none;
+            animation: animate-blob 20s infinite alternate;
+        }
+
+        .blob-1 {
+            top: -200px;
+            right: -200px;
+        }
+
+        .blob-2 {
+            bottom: -200px;
+            left: -200px;
+            background: radial-gradient(circle, #3b82f633, transparent);
+        }
+
+        @keyframes animate-blob {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(50px, 50px) scale(1.1);
+            }
+        }
+    </style>
+
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <script>
+        function initializeEnhancements() {
+            // 1. Fix Profile Image
+            const profileImg = document.querySelector('img[alt="Syed Shoaib Aslam"]');
+            if (profileImg && !profileImg.src.includes('profile.png')) {
+                profileImg.src = './profile.png';
+            }
+
+            // 2. Fix Contact Buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                const text = btn.innerText.toLowerCase();
+                if (!btn.hasAttribute('data-enhanced')) {
+                    if (text.includes('github')) {
+                        btn.onclick = () => window.open('https://github.com/shoaib39011', '_blank');
+                    } else if (text.includes('linkedin')) {
+                        btn.onclick = () => window.open('http://www.linkedin.com/in/shoaib-aslam-syed', '_blank');
+                    } else if (text.includes('email')) {
+                        btn.onclick = () => window.location.href = 'mailto:syedshoaibaslam@gmail.com';
+                    } else if (text.includes('get in touch')) {
+                        btn.onclick = () => {
+                            const contactSection = Array.from(document.querySelectorAll('h2')).find(h => h.innerText.toLowerCase().includes('touch') || h.innerText.toLowerCase().includes('contact'));
+                            if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+                        };
+                    } else if (text.includes('view projects')) {
+                        btn.onclick = () => {
+                            const projectsSection = Array.from(document.querySelectorAll('h2')).find(h => h.innerText.toLowerCase().includes('work') || h.innerText.toLowerCase().includes('projects'));
+                            if (projectsSection) projectsSection.scrollIntoView({ behavior: 'smooth' });
+                        };
+                    }
+                    btn.setAttribute('data-enhanced', 'true');
+                }
+            });
+
+            // 3. Navbar Scrolling
+            const navButtons = document.querySelectorAll('nav button, header button');
+            navButtons.forEach(btn => {
+                if (!btn.hasAttribute('data-nav-enhanced')) {
+                    btn.onclick = (e) => {
+                        const targetText = btn.innerText.toLowerCase().trim();
+                        const headers = document.querySelectorAll('h2');
+                        for (const h2 of headers) {
+                            if (h2.innerText.toLowerCase().includes(targetText)) {
+                                h2.parentElement.scrollIntoView({ behavior: 'smooth' });
+                                break;
+                            }
+                        }
+                    };
+                    btn.setAttribute('data-nav-enhanced', 'true');
+                }
+            });
+        }
+
+        // Run initialization
+        window.addEventListener('load', initializeEnhancements);
+        setInterval(initializeEnhancements, 1000); // Robust check for React re-renders
+
+        const root = document.getElementById('root');
+        if (root) {
+            const observer = new MutationObserver(initializeEnhancements);
+            observer.observe(root, { childList: true, subtree: true });
+        }
+    </script>
+</body>
+
+</html>
